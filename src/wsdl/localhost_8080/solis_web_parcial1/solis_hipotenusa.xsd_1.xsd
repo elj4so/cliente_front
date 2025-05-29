@@ -1,0 +1,35 @@
+<?xml version='1.0' encoding='UTF-8'?><!-- Published by XML-WS Runtime (https://github.com/eclipse-ee4j/metro-jax-ws). Runtime's version is Eclipse Metro/4.0.1 (RELEASE-4.0.1-18da659; 2022-07-02T08:47:18+0000) XMLWS-Impl/4.0.0 XMLWS-API/${jaxws-api.version} XMLB-Impl/4.0.0 XMLB-API/4.0.0 git-revision#18da659. --><xs:schema xmlns:tns="http://solis/" xmlns:xs="http://www.w3.org/2001/XMLSchema" version="1.0" targetNamespace="http://solis/">
+
+<xs:element name="calcular_hipotenusa" type="tns:calcular_hipotenusa"/>
+
+<xs:element name="calcular_hipotenusaResponse" type="tns:calcular_hipotenusaResponse"/>
+
+<xs:element name="solis_garcia_jasiel" type="tns:solis_garcia_jasiel"/>
+
+<xs:element name="solis_garcia_jasielResponse" type="tns:solis_garcia_jasielResponse"/>
+
+<xs:complexType name="solis_garcia_jasiel">
+<xs:sequence>
+<xs:element name="name" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="solis_garcia_jasielResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="calcular_hipotenusa">
+<xs:sequence>
+<xs:element name="cateto1" type="xs:double"/>
+<xs:element name="cateto2" type="xs:double"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="calcular_hipotenusaResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:double"/>
+</xs:sequence>
+</xs:complexType>
+</xs:schema>
